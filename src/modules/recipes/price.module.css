@@ -1,0 +1,20 @@
+.priceList {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.totalPrice {
+  font-weight: 600;
+  padding-top: 8px;
+  border-top-width: 1px;
+  border-top-color: #e4e4e4;
+  border-top-style: solid;
+  display: flex;
+  justify-content: space-between;
+}
+.priceListItem {
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
