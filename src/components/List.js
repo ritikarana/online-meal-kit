@@ -3,7 +3,21 @@ import styled from 'styled-components';
 import { space, layout } from 'styled-system';
 import propTypes from '@styled-system/prop-types';
 
-export const ListItem = styled.li``;
+export const ListItem = styled.li`
+padding-bottom: 8px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+display: flex;
+justify-content: space-between;`;
+
+
+export const TotalPrice = styled.span`
+font-weight: 600;
+border-top-width: 1px;
+border-top-color: #e4e4e4;
+border-top-style: solid;
+width: 100%;
+display: flex;
+justify-content: space-between;
+`
 
 ListItem.displayName = 'ListItem';
 
