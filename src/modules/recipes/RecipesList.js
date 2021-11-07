@@ -97,7 +97,7 @@ const Recipes = () => {
         <Col sm={6}>
           <h3>{data.headline}</h3>
         </Col>
-        <Col sm={6}>
+        {totalSelected && <Col sm={6}>
           <Flex alignItems="center" justifyContent="flex-end">
             <Box textAlign="right" mr="xs">
               <h3>{totalPrice}</h3>
@@ -105,6 +105,7 @@ const Recipes = () => {
             <PriceInfo summary={summary} totalPrice={totalPrice} shippingPrice={shippingPrice} />
           </Flex>
         </Col>
+         }
       </Row>
 
       <Row>

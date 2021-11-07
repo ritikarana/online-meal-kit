@@ -1,6 +1,6 @@
 import React from 'react';
 import Box from '../../components/Box';
-import List, { ListItem, TotalPrice } from '../../components/List';
+import List, { ListItem, ListItemTotalPrice } from '../../components/List';
  
 //  PriceSummary user interface
 const PriceSummary = ({ summary, totalPrice, shippingPrice }) => (
@@ -17,9 +17,9 @@ const PriceSummary = ({ summary, totalPrice, shippingPrice }) => (
       <ListItem key="shipping">
         <span>Shipping</span> {shippingPrice}
       </ListItem>
-      <ListItem key="total">
-        <TotalPrice>  <span>Total</span>{totalPrice}</TotalPrice>
-      </ListItem>
+      <ListItemTotalPrice key="total">
+       <span>Total</span> <span>{totalPrice}</span>
+      </ListItemTotalPrice>
     </List>
   </Box>
 );

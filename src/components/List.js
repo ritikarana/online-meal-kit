@@ -8,16 +8,14 @@ padding-bottom: 8px;
 display: flex;
 justify-content: space-between;`;
 
+export const ListItemTotalPrice = styled(ListItem)`
+    font-weight: 600;
+    border-top-width: 1px;
+    border-top-color: #e4e4e4;
+    border-top-style: solid;
+    width: 100%;
+`;
 
-export const TotalPrice = styled.span`
-font-weight: 600;
-border-top-width: 1px;
-border-top-color: #e4e4e4;
-border-top-style: solid;
-width: 100%;
-display: flex;
-justify-content: space-between;
-`
 
 ListItem.displayName = 'ListItem';
 
